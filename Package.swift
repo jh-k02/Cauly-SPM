@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "CaulySDK",
-            targets: ["Cauly-SPM"]
+            targets: ["CaulySDKResources"]
         )
     ],
     targets: [
@@ -19,7 +19,7 @@ let package = Package(
         ),
 
         .target(
-            name: "Cauly-SPM",
+            name: "CaulySDKResources",
             dependencies: [
                 .target(name: "CaulySDK")
             ],
